@@ -18,6 +18,6 @@ This software relies on pacman, the package manager for Arch Linux; APT and apt-
 I do not own/ am not affiliated with any of those projects.
 
 By using this script you agree that the author is not responsible for any damage that may be caused by the script which is provided "as is" and without any warranty, any harm (malfunction, data loss, damage) done to the system is solely the user's responsability.
-Copyright (C) 2025 deltaZenith
+Copyright (C) 2025 deltaZenith.
 This file is part of DAPU.
-DAPU is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+DAPU is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/> .
