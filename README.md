@@ -15,10 +15,10 @@ The script, upon launching, checks for elevated privileges and prints a list of 
 
 ## Installation & Usage
 ### Clone the repo
-```git clone https://github.com/deltaZenith/DAPU.git
+```git clone https://github.com/deltaZenith/DAPU.git```
 ### Run the script
-```cd DAPU
-```sudo python3 dapu.py
+```cd DAPU```
+```sudo python3 dapu.py```
 
 ## Disclaimer
 This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries.
