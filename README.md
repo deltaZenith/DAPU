@@ -13,6 +13,13 @@ The process of managing packages is entirely automatic, the only thing the user 
 ### Interactiveness
 The script, upon launching, checks for elevated privileges and prints a list of options, each of which corresponds to a number, to know what to do, the script relies on user input which is expected to be one of the aforementioned numbers.
 
+## Installation & Usage
+### Clone the repo
+```git clone https://github.com/deltaZenith/DAPU.git
+### Run the script
+```cd DAPU
+```sudo python3 dapu.py
+
 ## Disclaimer
 This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries.
 I do not own/ am not affiliated with any of those projects.
