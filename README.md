@@ -17,7 +17,7 @@ The script, upon launching, checks for elevated privileges and prints a list of 
 ### Clone the repo
 ```git clone https://github.com/deltaZenith/DAPU.git```
 ### Run the script
-```cd DAPU```
+```cd DAPU```  
 ```sudo python3 dapu.py```
 
 ## Disclaimer
