@@ -41,7 +41,7 @@ Add zypper supporte;
 Add advanced features for each of the package managers.
 
 ## Disclaimer
-This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries.
+This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; dnf the package manager for Fedora;the Python programming language and the "subprocess", the "shutils", the "os" and the "logging" Python libraries.
 I do not own/ am not affiliated with any of those projects.  
 
 By using this script you agree that the author is not responsible for any damage that may be caused by the script which is provided "as is" and without any warranty, any harm (malfunction, data loss, damage) done to the system is solely the user's responsability.  
