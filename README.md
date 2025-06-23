@@ -28,7 +28,7 @@ Either run it with the python command directly:
 ``sudo python3 dapu.py``  
 or make it executable (which only needs to be done once):  
 `` chmod +x dapu.py``   
-and run it:
+and run it:  
 ``sudo ./dapu.py``
 ### Checking the logs
 Upon running the script, a directory containing DAPU's logs will be created in /var/log/dapu/ .  
