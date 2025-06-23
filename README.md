@@ -14,7 +14,7 @@ The process of managing packages is entirely automatic, the only thing the user 
 The script, upon launching, checks for elevated privileges and prints a list of options, each of which corresponds to a number, to know what to do, the script relies on user input which is expected to be one of the aforementioned numbers.
 
 ## Installation & Usage
-### Dependecies
+### Dependencies
 Python, which is preinstalled on most systems by default;  
 Your distro's package manager which needs to be among the supported ones (APT, dnf, pacman.)
 ### Clone the repo
