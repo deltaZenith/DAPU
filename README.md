@@ -36,8 +36,8 @@ To check the logs, run:
 This will return the file's content which represent every command that has been run.
 
 ## To do list
-Add zypper supported  
-Add advanced features for each of the package managers
+Add zypper supporte;  
+Add advanced features for each of the package managers.
 
 ## Disclaimer
 This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries.
