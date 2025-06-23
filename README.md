@@ -26,8 +26,9 @@ From the directory in which you cloned the repository, this command will change 
 ### Run the script
 Either run it with the python command directly:  
 ``sudo python3 dapu.py``  
-or make it executable and run it:  
+or make it executable (which only needs to be done once):  
 `` chmod +x dapu.py``   
+and run it:
 ``sudo ./dapu.py``
 ### Checking the logs
 Upon running the script, a directory containing DAPU's logs will be created in /var/log/dapu/ .  
