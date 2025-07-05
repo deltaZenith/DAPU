@@ -21,7 +21,7 @@ Your distro's package manager which needs to be among the supported ones (APT, d
 This will download the files in the repository to your current directory:  
 ``git clone https://github.com/deltaZenith/DAPU.git``
 ### CD into the DAPU folder
-From the directory in which you cloned the repository, this command will change your working directory to DAPU's folder:
+From the directory in which you cloned the repository, this command will change your working directory to DAPU's folder:  
 ``cd DAPU``  
 ### Run the script
 Either run it with the python command directly:  
