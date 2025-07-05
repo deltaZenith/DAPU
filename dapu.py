@@ -42,6 +42,13 @@ def check_pm():
         exit(f"Your package manager isn't supported. The supported package managers are: {supported_pms}")
     logging.info(f" Detected package manager: {pm}")
 
+def check_opensuseleap():
+    global leap
+    try:
+        leap = subprocess.run(["grep", "Leap", "-m1", "-o", "-q", "/etc/os-release"], check=True)
+    except subprocess.CalledProcessError:
+        leap=False
+
 def list_options():  
     print("=================DAPU==================")
     for i, item in enumerate(options):
@@ -63,6 +70,12 @@ def check_command():
     elif command=="2":
         confirm = input("The system will be updated, do you wish to continue? [y/n] ")
         if confirm == "y":
+            if pm=="zypper":
+                check_opensuseleap()
+                if leap:
+                    subprocess.run(["zypper", "up", "-y"])
+                    logging.info(" Ran: zypper up -y")
+                    return
             print("Updating the system...")
             subprocess.run(commands[pm]["update"])
             logging.info(f" Ran: {' '.join(commands[pm]['update'])}")
