@@ -1,3 +1,8 @@
+## Version 0.1
+Added Zypper support.  
+This version marks DAPU's entrance in the beta phase since all package managers that were planned to be included originally are now supported.  
+This doesn't mean that other ones aren't going to be supported, so look forward to future versions of DAPU that are even more distro-agnostic and with more advanced features to satisfy both newcomers and more seasoned users.
+
 ## Version 0.0.2
 Added simple logging capabilities and dnf support.
 ## Version 0.0.1

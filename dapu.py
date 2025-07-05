@@ -8,16 +8,14 @@ import shutil
 import os
 import logging
 
-os.makedirs("/var/log/dapu", exist_ok=True)
-
 pm=""
-supported_pms=["pacman", "apt", "dnf"]
+supported_pms=["pacman", "apt", "dnf", "zypper"]
 options=["Install packages", "Update the system", "Remove a package", "List installed packages", "Search for a package in the repos", "Clear the package cache", "Exit"]
-logging.basicConfig(filename="/var/log/dapu/dapu.log", format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
 commands={
         "pacman":{"install":["pacman", "-S", "--noconfirm"], "update":["pacman", "-Syu", "---noconfirm"], "remove":["pacman", "-Rns", "--noconfirm"], "query":["pacman", "-Q"], "search":["pacman", "-Ss"], "cache":["pacman", "-Sc", "--noconfirm"]},
         "apt-get":{"install":["apt-get", "install", "-y"], "update":["apt-get", "update"], "upgrade":["apt-get", "upgrade", "-y"] ,"remove":["apt-get", "purge", "-y"], "query":["apt", "list", "--installed"], "search": ["apt", "search"], "cache":["apt-get", "autoclean", "-y"]},
-        "dnf":{"install":["dnf", "install", "-y"], "update":["dnf", "upgrade", "-y"], "remove":["dnf", "remove", "-y"], "query":["dnf", "list", "--installed"], "search":["dnf", "search"], "cache":["dnf", "clean", "all"]}
+        "dnf":{"install":["dnf", "install", "-y"], "update":["dnf", "upgrade", "-y"], "remove":["dnf", "remove", "-y"], "query":["dnf", "list", "--installed"], "search":["dnf", "search"], "cache":["dnf", "clean", "all"]},
+        "zypper":{"install":["zypper", "install", "-y"], "update":["zypper", "dup", "-y"], "remove":["zypper", "remove", "--clean-deps", "-y"], "query":["zypper", "se", "-si"], "search":["zypper", "search"], "cache":["zypper", "clean",]}
         }
 
 def check_euid():
@@ -25,6 +23,9 @@ def check_euid():
         pass
     else:
         exit("You need elevated (sudo) privileges to run this program.")
+def init_logs():
+    os.makedirs("/var/log/dapu", exist_ok=True)
+    logging.basicConfig(filename="/var/log/dapu/dapu.log", format='%(asctime)s %(levelname)s:%(message)s', level=logging.DEBUG)
 
 def check_pm():
     global pm
@@ -34,9 +35,11 @@ def check_pm():
         pm="apt-get"
     elif shutil.which("dnf"):
         pm="dnf"
+    elif shutil.which("zypper"):
+        pm="zypper"
     else:
         subprocess.run(["clear"])
-        exit(f"Your package manager isn't supported. The supported package managers are: supported_pms")
+        exit(f"Your package manager isn't supported. The supported package managers are: {supported_pms}")
     logging.info(f" Detected package manager: {pm}")
 
 def list_options():  
@@ -97,8 +100,8 @@ def check_command():
         print(output.stdout)
     elif command=="6":
         confirm = input("The cache will be cleaned, do you wish to continue? [y/n] ")
-        print("Cleaning cache...")
         if confirm == "y":
+            print("Cleaning cache...")
             subprocess.run(commands[pm]["cache"])
             logging.info(f" Ran: {' '.join(commands[pm]['cache'])}")
             print("==============CACHE CLEANED==============")
@@ -112,6 +115,7 @@ def check_command():
         pass
 
 check_euid()
+init_logs()
 check_pm()
 while True:
     list_options()
