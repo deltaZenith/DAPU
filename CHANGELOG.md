@@ -1,3 +1,5 @@
+## Version 0.1.1
+Added functionality that detects whether zypper is being used on OpenSUSE Leap or Tumbleweed, this enables DAPU to follow best pratices depending on the respective version.  
 ## Version 0.1
 Added Zypper support.  
 This version marks DAPU's entrance in the beta phase since all package managers that were planned to be included originally are now supported.  
