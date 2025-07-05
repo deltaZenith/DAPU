@@ -18,7 +18,7 @@ The script, upon launching, checks for elevated privileges and prints a list of 
 Python, which is preinstalled on most systems by default;  
 Your distro's package manager which needs to be among the supported ones (APT, dnf, pacman.)
 ### Clone the repo
-This will download the files in the repository to your current directory:
+This will download the files in the repository to your current directory:  
 ``git clone https://github.com/deltaZenith/DAPU.git``
 ### CD into the DAPU folder
 From the directory in which you cloned the repository, this command will change your working directory to DAPU's folder:
@@ -27,7 +27,7 @@ From the directory in which you cloned the repository, this command will change 
 Either run it with the python command directly:  
 ``sudo python3 dapu.py``  
 or make it executable and run it:  
-`` chmod +x dapu.py``   
+``chmod +x dapu.py``   
 ``sudo ./dapu.py``
 ### Checking the logs
 Upon running the script, a directory containing DAPU's logs will be created in /var/log/dapu/ .  
