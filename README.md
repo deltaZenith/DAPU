@@ -32,7 +32,7 @@ or make it executable and run it:
 ### Checking the logs
 Upon running the script, a directory containing DAPU's logs will be created in /var/log/dapu/ .  
 To check the logs, run:  
-``cat /var/log/dapu/dapu.log``
+``cat /var/log/dapu/dapu.log``  
 This will return the file's content which represent every command that has been run.
 
 ## To do list
