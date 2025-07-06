@@ -20,4 +20,4 @@ A clear and concise description of any alternative solutions or features you've 
 Add any other context or screenshots about the feature request here.
 
 **Disclaimer**
-While I appreciate wholeheartedly feature requests I DO NOT guarantee that they’ll be integrated in DAPU
+While I wholeheartedly appreciate feature requests I DO NOT guarantee that they’ll be integrated in DAPU
