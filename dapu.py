@@ -12,7 +12,7 @@ pm=""
 supported_pms=["pacman", "apt", "dnf", "zypper"]
 options=["Install packages", "Update the system", "Remove a package", "List installed packages", "Search for a package in the repos", "Clear the package cache", "Exit"]
 commands={
-        "pacman":{"install":["pacman", "-S", "--noconfirm"], "update":["pacman", "-Syu", "---noconfirm"], "remove":["pacman", "-Rns", "--noconfirm"], "query":["pacman", "-Q"], "search":["pacman", "-Ss"], "cache":["pacman", "-Sc", "--noconfirm"]},
+        "pacman":{"install":["pacman", "-S", "--noconfirm"], "update":["pacman", "-Syu", "--noconfirm"], "remove":["pacman", "-Rns", "--noconfirm"], "query":["pacman", "-Q"], "search":["pacman", "-Ss"], "cache":["pacman", "-Sc", "--noconfirm"]},
         "apt-get":{"install":["apt-get", "install", "-y"], "update":["apt-get", "update"], "upgrade":["apt-get", "upgrade", "-y"] ,"remove":["apt-get", "purge", "-y"], "query":["apt", "list", "--installed"], "search": ["apt", "search"], "cache":["apt-get", "autoclean", "-y"]},
         "dnf":{"install":["dnf", "install", "-y"], "update":["dnf", "upgrade", "-y"], "remove":["dnf", "remove", "-y"], "query":["dnf", "list", "--installed"], "search":["dnf", "search"], "cache":["dnf", "clean", "all"]},
         "zypper":{"install":["zypper", "install", "-y"], "update":["zypper", "dup", "-y"], "remove":["zypper", "remove", "--clean-deps", "-y"], "query":["zypper", "se", "-si"], "search":["zypper", "search"], "cache":["zypper", "clean",]}
