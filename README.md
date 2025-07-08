@@ -1,7 +1,7 @@
 # DAPU
 DAPU (Distro Agnostic Package Utility) aims to be a simple, no frills, cross-compatible, interactive script which simplifies package management across Linux distros.
 ## Preview
-![](https://github.com/deltaZenith/DAPU/blob/main/assets/preview.gif)  
+![](https://github.com/deltaZenith/DAPU/blob/main/.assets/preview.gif)  
 DAPU on Arch Linux.
 ## Features
 This script is meant for users who do not wish to learn their distro's package manager's syntax and commands, this software's main goal is to facilitate package management by making it automated and interactive. While the script doesn't include any code from other projects, it wraps around the package manager which is detected automatically, therefore the script has your distro's package manager as a dependency alongside other Python libraries and the Python programming language itself.
