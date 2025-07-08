@@ -38,7 +38,6 @@ To check the logs, run:
 This will return the file's content which includes every command that has been run.
 
 ## To do list
-Add zypper supported  
 Add advanced features for each of the package managers
 
 ## Disclaimer
