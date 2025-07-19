@@ -113,7 +113,7 @@ def adv_menu():
             confirm=(f"The package '{pkg}' will be marked as user-installed, do you wish to continue? [y/n] ")
             subprocess.run(commands[pm]["mark"]+[pkg])
             logging.info(f" Ran: {' '.join(commands[pm]['mark'] + [pkg])}")
-        elif command == "1":
+        elif command == "2":
             confirm=input("All uneeded packages will be removed, do you wish to continue? [y/n] ")
             if pm == "pacman":
                 unneeded=subprocess.run(["pacman", "-Qtdq"], capture_output=True, text=True)
