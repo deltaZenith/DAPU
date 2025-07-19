@@ -25,21 +25,20 @@ This will download the files in the repository to your current directory:
 ### CD into the DAPU folder
 From the directory in which you cloned the repository, this command will change your working directory to DAPU's folder:  
 ``cd DAPU``  
-### Run the script
-Either run it with the python command directly:  
-``sudo python3 dapu.py``  
-or make it executable and run it:  
-``chmod +x dapu.py``(This command is the one to make the script executable and only needs to be run once)   
-``sudo ./dapu.py``
+### Install the script 
+or make install.sh executable and run it:  
+``chmod +x install.sh``   
+``sudo ./install.sh``
+## Run the script
+Now that DAPU's files have been copied in the intended directory (/usr/local/bin), you can run it with  
+``sudo dapu``
 ### Checking the logs
 Upon running the script, a directory containing DAPU's logs will be created in /var/log/dapu/ .  
 To check the logs, run:  
 ``cat /var/log/dapu/dapu.log``  
 This will return the file's content which includes every command that has been run.
-
-## To do list
-Add advanced features for each of the package managers
-
+## Uninstalling
+Run install.sh again in the same way as before and you'll be prompted to uninstall DAPU if its files are found, just answer "y" and the script will removed the executable files.  
 ## Disclaimer
 This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; dnf, the package manager for Fedora: zypper, the package manager for OpenSUSE; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries and sudo. Optionally it can rely on on the AUR helpers yay or paru.
 I do not own/ am not affiliated with any of those projects.  
