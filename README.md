@@ -4,7 +4,7 @@ DAPU (Distro Agnostic Package Utility) aims to be a simple, no frills, cross-com
 ![](https://github.com/deltaZenith/DAPU/blob/main/.assets/preview.gif)  
 DAPU on Arch Linux.
 ## Features
-This script is meant for users who do not wish to learn their distro's package manager's syntax and commands, this software's main goal is to facilitate package management by making it automated and interactive. While the script doesn't include any code from other projects, it wraps around the package manager which is detected automatically, therefore the script has your distro's package manager as a dependency alongside other Python libraries and the Python programming language itself.
+This script is meant for users who do not wish to learn their distro's package manager's syntax and commands, this software's main goal is to facilitate package management by making it automated and interactive. While the script doesn't include any code from other projects, it wraps around the package manager which is detected automatically, therefore the script has your distro's package manager as a dependency alongside other Python libraries, bash and the Python programming language itself.
 
 ### Cross compatibility
 At the moment, the supported package managers are APT, dnf, zypper and pacman, with more to come. The script figures out what package manager is installed using the shutils library and determines the approriate command for each situation through the use of dictionaries.
@@ -41,7 +41,7 @@ This will return the file's content which includes every command that has been r
 Add advanced features for each of the package managers
 
 ## Disclaimer
-This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; dnf, the package manager for Fedora: zypper, the package manager for OpenSUSE; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries.
+This software relies on pacman, the package manager for Arch Linux; APT and apt-get, the package managers for Debian; dnf, the package manager for Fedora: zypper, the package manager for OpenSUSE; the Python programming language and the "subprocess", the "shutils" and "os" Python libraries and sudo. Optionally it can rely on on the AUR helpers yay or paru.
 I do not own/ am not affiliated with any of those projects.  
 
 By using this script you agree that the author is not responsible for any damage that may be caused by the script which is provided "as is" and without any warranty, any harm (malfunction, data loss, damage) done to the system is solely the user's responsability.  
