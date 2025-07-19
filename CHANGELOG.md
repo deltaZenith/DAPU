@@ -1,3 +1,19 @@
+## Version 0.2
+Added advanced options for each of the package managers and a new script that copies each of the script's components in /usr/local/bin  
+## New options for all package managers
+Mark packages as user installed  
+Remove unneeded packages (available for all package managers except zypper)  
+### Package Manager specific options
+### Pacman
+Added AUR helper support for yay and paru, if they're installed, they'll be detected automatically, if not the user will be prompted to download one of them using a simple bash script.  
+## APT
+Added advanced options to fix missing/broken dependencies  
+Added a distribution upgrades option  
+Added an option to reconfigure all packages through dpkg  
+## DNF
+Added an option to check for package integrity  
+Added an option to downgrade packages  
+Added an option to run minimal upgrades  
 ## Version 0.1.1
 Added functionality that detects whether zypper is being used on OpenSUSE Leap or Tumbleweed, this enables DAPU to follow best pratices depending on the respective version.  
 ## Version 0.1
