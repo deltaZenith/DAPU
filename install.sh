@@ -24,8 +24,10 @@ else
 	read -p "Welcome to the DAPU setup, this script will install DAPU on your system, proceed? [y/n] " confirm
 	if [ $confirm == "y" ]; then
 		mkdir -p $DIRECTORYLOCATION
+  		chmod +x dapu.py
 		cp dapu.py $FILELOCATION
 		printf "Created file %s\n" "$FILELOCATION"
+  		chmod +x aur-setup.sh
 		cp aur-setup.sh $DIRECTORYLOCATION/aur-setup.sh
 		printf "Created file %s\n" "$DIRECTORYLOCATION/aur-setup.sh"
 	else
